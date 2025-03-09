@@ -1,146 +1,103 @@
 # _data/ui-text.yml for Agency Jekyll Theme
 #
-# Updated to reflect "Gap Tap" brand and product.
+# Sections now:
+#   overview
+#   specs
+#   compare
+#   how-to-use
+#   buy
+#
 # Usage:
 #   In your _config.yml, set `locale: "en"` (or en-US) to load this data.
-#
-# References:
-#   https://github.com/raviriley/agency-jekyll-theme
-#   Each section references these text variables.
 
 en: &DEFAULT_EN
+
+  # Header/Hero (Optional)
   header:
     title: "Welcome to Gap Tap!"
     text: "Flawless Floors. Seamless Repairs."
     button: "Discover More"
-    buttonlink: "#services"
+    buttonlink: "#overview"
 
-  services:
-    title: "Key Features"
-    text: "Gap Tap quickly fixes gaps in laminate, vinyl, or wood floors."
-    section: services
+  # OVERVIEW (Replacing "services")
+  overview:
+    title: "Overview"
+    text: "Gap Tap quickly fixes gaps in laminate, vinyl, or wood floors. Built to save you time and money while ensuring professional results."
+    section: overview
     list:
-      - title: "Heavy-Duty Suction Cup"
-        desc: "Securely grips floor pieces for seamless gap closure without damage."
-        icon: fas fa-hand-rock
-      - title: "Non-Scratch Mallet"
-        desc: "Includes a specially designed mallet to gently close gaps without harming your floors."
-        icon: fas fa-hammer
-      - title: "Durable & User-Friendly"
-        desc: "Built with premium materials to ensure reliability and ease of use. Perfect for DIYers and professionals alike."
-        icon: fas fa-tools
+      - title: "Simple & Effective"
+        desc: "Close gaps effortlessly with a heavy-duty suction cup and non-scratch mallet."
+        icon: fas fa-hand-point-up
+      - title: "For DIYers & Pros"
+        desc: "Designed for homeowners and contractors who demand reliable tools."
+        icon: fas fa-user-cog
+      - title: "Built to Last"
+        desc: "Premium materials ensure long-term durability and performance."
+        icon: fas fa-check
 
-  portfolio:
-    title: "Product Gallery"
-    text: "Take a closer look at Gap Tap in action."
-    section: portfolio
+  # SPECS (Replacing "portfolio")
+  specs:
+    title: "Specs"
+    text: "Dive into the technical details that make Gap Tap so effective."
+    section: specs
     closebutton: "Close"
+    # Example bullet points or specs could go here
+    bulletpoints:
+      - "Weight: 3.2 lbs (approx. 1.45 kg)"
+      - "Mallet included: Non-scratch head"
+      - "Suction cup diameter: 4.5 inches"
+      - "Materials: PA, steel, and shock-absorbing rubber"
 
-  timeline:
-    title: "Our Journey"
-    text: "How Gap Tap Came to Be"
-    section: timeline
-    # left is the default
-    #start_align: "left"
+  # COMPARE (Replacing "timeline")
+  compare:
+    title: "Compare"
+    text: "See how Gap Tap stacks up against other floor repair methods."
+    section: compare
+    # Using timeline format to illustrate comparisons
     events:
-      - title: "Identifying the Problem"
-        year: "2023"
-        desc: "Realizing the hassle of floor gaps, we set out to create a tool that any homeowner or contractor could use with ease."
-        image: assets/img/timeline/1.jpg
-        alt: "Identifying the Problem"
-      - title: "Prototyping & Testing"
-        year: "2024"
-        desc: "Countless design iterations led to a robust suction system and mallet combination that delivers professional results."
-        image: assets/img/timeline/2.jpg
-        alt: "Prototyping and Testing"
-      - title: "Gap Tap Goes Live"
-        year: "2025"
-        desc: "We introduced Gap Tap to the market, offering a cost-effective, reliable solution for laminate, vinyl, and hardwood floors."
-        image: assets/img/timeline/3.jpg
-        alt: "Gap Tap Launch"
-      - title: "Continued Innovation"
+      - title: "Traditional Block & Hammer"
+        year: ""
+        desc: "Risk of floor damage, no secure grip on floor pieces, plus a higher learning curve."
+        image: assets/img/compare/block.jpg
+        alt: "Block & hammer approach"
+      - title: "Generic Suction Tools"
+        year: ""
+        desc: "Often weak suction and not built for repeated mallet strikes. Less durable."
+        image: assets/img/compare/generic.jpg
+        alt: "Generic suction comparison"
+      - title: "Gap Tap Advantage"
         year: "Present"
-        desc: "We remain committed to improving home repair tools and helping users maintain beautiful floors."
-        image: assets/img/timeline/4.jpg
-        alt: "Continued Innovation"
-    end: "Be Part <br> of Our <br> Story!"
+        desc: "Strong suction, non-scratch mallet, premium materials. Designed specifically to fix floor gaps with ease."
+        image: assets/img/compare/gap-tap.jpg
+        alt: "Gap Tap advantage"
+    end: "Choose a Better Way!"
 
-  about:
-    title: "About Us"
-    text: "Our Story"
-    body: "Gap Tap is a product of Circle Solutions LLC. We’re dedicated to simplifying home repairs and empowering homeowners with reliable, easy-to-use tools. **Markdown** is supported in this text for formatting."
-    section: about
+  # HOW TO USE (Replacing "about")
+  how-to-use:
+    title: "How to Use"
+    text: "A straightforward process to fix floor gaps."
+    body: "1. Clean the gap area. <br> 2. Secure the suction cup. <br> 3. Tap gently with our non-scratch mallet until the gap closes. <br><br> For detailed instructions, refer to our included guide. **Markdown** is supported."
+    section: how-to-use
 
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" # "yes" or "no"
-    list:
-      - title: "Home Repair Enthusiasts"
-        url: "#"
-        logo: assets/img/clients/envato.jpg
-      - title: "Flooring Professionals"
-        url: "#"
-        logo: assets/img/clients/designmodo.jpg
-      - title: "DIY Community"
-        url: "#"
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Contractor Associations"
-        url: "#"
-        logo: assets/img/clients/creative-market.jpg
+  # BUY (Replacing "contact")
+  buy:
+    title: "Buy"
+    text: "Ready to fix those floor gaps? Purchase Gap Tap from your favorite retailer."
+    section: buy
+    # Instead of a contact form, we’ll provide direct store links or info
+    storelinks:
+      - name: "Amazon"
+        url: "https://www.amazon.com/dp/B0DJHFJ8PC"
+        icon: fab fa-amazon
+      - name: "Walmart"
+        url: "https://www.walmart.com/ip/Gap-Tap-Heavy-Duty-Floor-Fixing-Tool/15297350480"
+        icon: fas fa-store
+      - name: "eBay"
+        url: "https://www.ebay.com/itm/297015894001"
+        icon: fab fa-ebay
+    note: "For questions or bulk orders, email us at <strong>support@gap-tap.com</strong>."
 
-  team:
-    title: "Meet Our Team"
-    text: "Passionate about flawless floors."
-    subtext: "We combine design, engineering, and real-world testing to ensure Gap Tap meets the highest standards."
-    section: team
-    people:
-      - name: "Brad Dougherty"
-        role: "Founder & Design Lead"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Soo Smith"
-        role: "Operations Manager"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Nick Lu"
-        role: "Manufacturing Partner"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-
-  contact:
-    title: "Contact Us"
-    text: "Reach out with any questions or support needs."
-    section: contact
-    name: "Name*"
-    name-validation: "Please enter your name."
-    email: "Email*"
-    email-validation: "Please enter your email address."
-    phone: "Phone Number"
-    phone-validation: "Please enter your phone number."
-    message: "Message*"
-    message-validation: "Please enter a message."
-    subject: "Gap Tap Contact Form Submission"
-    submit: "Send Message"
-
+  # FOOTER
   footer:
     legal: "Privacy Policy"
     social:
@@ -155,6 +112,7 @@ en: &DEFAULT_EN
       - url: https://instagram.com
         icon: "fab fa-instagram"
 
+# Additional English locales
 en-US:
   <<: *DEFAULT_EN
 en-CA:
