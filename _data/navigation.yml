@@ -1,24 +1,30 @@
-# _data/navigation.yml
 #
-# This file configures the menu items for the Agency Jekyll theme in multiple languages.
-# For each locale in your _config.yml (e.g. locale: "en"), the theme will display the nav items specified here.
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
 #
-# Usage in your theme:
-#  {{ site.data.navigation[site.locale].nav | default: 'No navigation set' }}
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
 
+# English (default)
+# -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Overview"
-      section: overview
-    - title: "Specs"
-      section: specs
-    - title: "Compare"
-      section: compare
-    - title: "How to Use"
-      section: how-to-use
-    - title: "Buy"
-      section: buy
-
+    - title: "Services"
+      section: services
+    - title: "Portfolio"
+      section: portfolio
+    - title: "About"
+      section: about
+    - title: "Timeline"
+      section: timeline
+    - title: "Team"
+      section: team
+    - title: "Contact"
+      section: contact
+    - title: "Theme Source"
+      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -28,19 +34,24 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
+# Spanish
+# -------
 es: &DEFAULT_ES
   nav:
-    - title: "Descripción"
-      section: overview
-    - title: "Especificaciones"
-      section: specs
-    - title: "Comparar"
-      section: compare
-    - title: "Cómo Usar"
-      section: how-to-use
-    - title: "Comprar"
-      section: buy
-
+    - title: "Servicios"
+      section: servicios
+    - title: "Portafolio"
+      section: portafolio
+    - title: "Sobre Nosotros"
+      section: nosotros
+    - title: "Cronología"
+      section: cronologia
+    - title: "Equipo"
+      section: equipo
+    - title: "Contáctenos"
+      section: contacto
+    - title: "Fuente de la plantilla"
+      url: https://github.com/raviriley/agency-jekyll-theme/
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
