@@ -11,20 +11,17 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Services"
-      section: services
-    - title: "Portfolio"
-      section: portfolio
-    - title: "About"
-      section: about
-    - title: "Timeline"
-      section: timeline
-    - title: "Team"
-      section: team
-    - title: "Contact"
-      section: contact
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
+    - title: "Overview"
+      section: overview
+    - title: "Specs"
+      section: specs
+    - title: "Compare"
+      section: compare
+    - title: "How to Use"
+      section: how-to-use
+    - title: "Buy"
+      section: buy
+      
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -38,20 +35,15 @@ en-AU:
 # -------
 es: &DEFAULT_ES
   nav:
-    - title: "Servicios"
-      section: servicios
-    - title: "Portafolio"
-      section: portafolio
-    - title: "Sobre Nosotros"
-      section: nosotros
-    - title: "Cronología"
-      section: cronologia
-    - title: "Equipo"
-      section: equipo
-    - title: "Contáctenos"
-      section: contacto
-    - title: "Fuente de la plantilla"
-      url: https://github.com/raviriley/agency-jekyll-theme/
+    - title: "Descripción"
+      section: descripción
+    - title: "Especificaciones"
+      section: especificaciones
+    - title: "Cómo Usar"
+      section: cómo-usar
+    - title: "Comparar"
+      section: comparar
+      
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
