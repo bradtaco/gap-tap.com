@@ -1,14 +1,10 @@
 #
-# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+# Usage:
+# {{ site.data.navigation[site.locale].nav | default: 'text' }}
 #
-# Configuration: Add to _config.yml
-# locale: "en-US"  [YOUR PREFERRED LOCALE]
+# Works with the Agency Jekyll Theme’s navigation system.
 #
-# How to use:
-# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
 
-# English (default)
-# -----------------
 en: &DEFAULT_EN
   nav:
     - title: "Services"
@@ -21,10 +17,13 @@ en: &DEFAULT_EN
       section: timeline
     - title: "Team"
       section: team
+    - title: "Shop"
+      section: shop
     - title: "Contact"
       section: contact
     - title: "Theme Source"
       url: https://github.com/raviriley/agency-jekyll-theme/
+
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -33,6 +32,7 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
+
 
 # Spanish
 # -------
@@ -48,10 +48,13 @@ es: &DEFAULT_ES
       section: cronologia
     - title: "Equipo"
       section: equipo
+    - title: "Tienda"
+      section: shop
     - title: "Contáctenos"
       section: contacto
     - title: "Fuente de la plantilla"
       url: https://github.com/raviriley/agency-jekyll-theme/
+
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
