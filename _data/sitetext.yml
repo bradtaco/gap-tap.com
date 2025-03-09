@@ -1,97 +1,149 @@
-# _data/ui-text.yml for Agency Jekyll Theme
 #
-# Updated for minimal Gap Tap site with sections:
-#   1. overview
-#   2. specs
-#   3. compare
-#   4. how-to-use
-#   5. buy
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
 #
-# Usage:
-#   In _config.yml, set `locale: "en"` or "en-US" so the theme loads from this file.
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
 
+# English (default)
+# -----------------
 en: &DEFAULT_EN
   header:
-    title: "Welcome to Gap Tap!"
-    text: "Flawless Floors. Seamless Repairs."
-    button: "Learn More"
-    buttonlink: "#overview"
+    title: Welcome to our Studio!
+    text: It's Nice To Meet You
+    button: Tell Me More
+    buttonlink: "#services"
 
-  # 1. Overview
-  overview:
-    title: "Overview"
-    text: "Gap Tap is the quick, reliable way to fix gaps in laminate, vinyl, or wood floors. Save time, save money, and enjoy perfectly aligned floors."
-    section: overview
+  services:
+    title: "Services"
+    text: "Lorem ipsum"
+    section: services
     list:
-      - title: "Heavy-Duty Suction Cup"
-        desc: "Securely grips floor planks, letting you close gaps efficiently without damage."
-        icon: fas fa-anchor
-      - title: "Non-Scratch Mallet"
-        desc: "Designed for gentle yet firm tapping, ensuring smooth repairs without floor scratches."
-        icon: fas fa-hammer
-      - title: "Built to Last"
-        desc: "Crafted with premium materials to handle repeated use, perfect for DIYers and professionals alike."
-        icon: fas fa-tools
+      - title: "E-Commerce"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Responsive Design"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-laptop
+      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+        desc: "Your description here, full **Markdown** support"
+        icon: fab fa-markdown
 
-  # 2. Specs
-  specs:
-    title: "Specs"
-    text: "Dive into the technical details of Gap Tap."
-    section: specs
-    bulletpoints:
-      - "Weight: ~3.2 lbs (1.45 kg)"
-      - "Suction Diameter: 4.5 in (approx. 11.4 cm)"
-      - "Mallet Material: Non-scratch rubber head"
-      - "Body Materials: PA, steel, shock-absorbing rubber"
+  portfolio:
+    title: "Portfolio"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portfolio
+    closebutton: "Close Project"
 
-  # 3. Compare
-  compare:
-    title: "Compare"
-    text: "How does Gap Tap stack up against other floor repair methods?"
-    section: compare
+  timeline:
+    title: "Timeline"
+    text: "Lorem ipsum timeline"
+    section: timeline
+    # left is the default
+    #start_align: "left"
     events:
-      - title: "Block + Hammer"
-        year: ""
-        desc: "Risky if you slip, plus potential floor damage. Often less precise."
-        image: assets/img/compare/block.jpg
-        alt: "Block and hammer"
-      - title: "Generic Suction Tools"
-        year: ""
-        desc: "Weak grip, not designed for repeated mallet strikes, leading to poor results."
-        image: assets/img/compare/generic.jpg
-        alt: "Generic suction tool"
-      - title: "Gap Tap Advantage"
-        year: ""
-        desc: "Powerful suction, sturdy non-scratch mallet, premium build. Specifically made to fix floor gaps effortlessly."
-        image: assets/img/compare/gap-tap.jpg
-        alt: "Gap Tap tool"
-    end: "Choose the Better Way!"
+      - title: "Our Humble Beginnings"
+        year: "2009-2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "An Agency is Born"
+        year: "March 2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "Jekyll Theme is created"
+        year: "2019"
+        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+      - title: "Title"
+        year: "2009-2011"
+        desc: "Your description here, **Markdown** is fully supported."
+        image: assets/img/timeline/4.jpg
+        alt:
+        # you can enforce the alignment
+        align: right
+    end: "Be Part <br> of Our <br> Story!"
 
-  # 4. How to Use
-  how-to-use:
-    title: "How to Use"
-    text: "Close gaps in just a few simple steps."
-    section: how-to-use
-    body: "1. Clean the gap area.<br>2. Position the suction cup firmly on the floor plank.<br>3. Gently tap with the non-scratch mallet until the gap is closed.<br><br>**Tip:** Check out our included instruction sheet for more details."
+  about:
+    title: "About Us"
+    text: "our story"
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    section: about
 
-  # 5. Buy
-  buy:
-    title: "Buy Gap Tap"
-    text: "Ready to get flawless floors? Pick a store below:"
-    section: buy
-    storelinks:
-      - name: "Amazon"
-        url: "https://www.amazon.com/dp/B0DJHFJ8PC"
-        icon: fab fa-amazon
-      - name: "Walmart"
-        url: "https://www.walmart.com/ip/Gap-Tap-Heavy-Duty-Floor-Fixing-Tool/15297350480"
-        icon: fas fa-store
-      - name: "eBay"
-        url: "https://www.ebay.com/itm/297015894001"
-        icon: fab fa-ebay
-    note: "Questions or bulk orders? Email <strong>support@gap-tap.com</strong>."
+  clients:
+    section: clients
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
 
-  # Footer
+  team:
+    title: "OUR AMAZING TEAM"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "Kay Garland"
+        role: "Lead Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Lead Marketer"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Lead Developer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contact Us"
+    text: "Lorem ipsum or call 123456789"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    phone: "Phone Number"
+    phone-validation: "Please enter your phone number."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
   footer:
     legal: "Privacy Policy"
     social:
@@ -105,7 +157,6 @@ en: &DEFAULT_EN
         icon: "fab fa-github"
       - url: https://instagram.com
         icon: "fab fa-instagram"
-
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -115,82 +166,142 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
-# Spanish (Optional)
+# Spanish
+# -------
 es: &DEFAULT_ES
   header:
-    title: "¡Bienvenido a Gap Tap!"
-    text: "Pisos Perfectos. Reparaciones Sin Esfuerzo."
-    button: "Más Información"
-    buttonlink: "#overview"
+    title: ¡Bienvenido a nuestro Estudio!
+    text: Es un placer conocerle
+    button: Ver más
+    buttonlink: "#servicios"
 
-  overview:
-    title: "Descripción"
-    text: "Gap Tap es la forma rápida y confiable de arreglar huecos en pisos laminados, vinílicos o de madera."
-    section: overview
+  services:
+    title: "Servicios"
+    text: "Lorem ipsum"
+    section: servicios
     list:
-      - title: "Ventosa Resistente"
-        desc: "Sujeta firmemente las tablas del piso para cerrar huecos sin daños."
-        icon: fas fa-anchor
-      - title: "Mazo Antirrayas"
-        desc: "Diseñado para golpear con suavidad pero eficacia, sin rayar la superficie."
-        icon: fas fa-hammer
-      - title: "Hecho para Durar"
-        desc: "Materiales de alta calidad para un uso repetido, ideal para entusiastas del bricolaje y profesionales."
-        icon: fas fa-tools
+      - title: "Comercio Electrónico"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Diseño Responsivo"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-laptop
+      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+        desc: "Su descripción aquí, soporte completo de **Markdown**"
+        icon: fab fa-markdown
 
-  specs:
-    title: "Especificaciones"
-    text: "Conoce los detalles técnicos de Gap Tap."
-    section: specs
-    bulletpoints:
-      - "Peso: ~3.2 lbs (1.45 kg)"
-      - "Diámetro de la ventosa: 4.5 in (11.4 cm aprox.)"
-      - "Mazo: Cabeza de goma antirrayas"
-      - "Materiales: PA, acero, goma amortiguadora"
+  portfolio:
+    title: "Portafolio"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portafolio
+    closebutton: "Cerrar Proyecto"
 
-  compare:
-    title: "Comparar"
-    text: "¿Cómo se compara Gap Tap con otros métodos?"
-    section: compare
+  timeline:
+    title: "Cronología"
+    text: "Lorem ipsum timeline"
+    section: cronologia
+    # left is the default
+    #start_align: "left"
     events:
-      - title: "Bloque + Martillo"
-        year: ""
-        desc: "Riesgoso si se desliza, además de posible daño al piso. Menos precisión."
-        image: assets/img/compare/block.jpg
-        alt: "Bloque y martillo"
-      - title: "Herramientas de Succión Genéricas"
-        year: ""
-        desc: "Agarre débil, no hechas para golpes repetidos; resultados pobres."
-        image: assets/img/compare/generic.jpg
-        alt: "Herramienta genérica"
-      - title: "Ventaja de Gap Tap"
-        year: ""
-        desc: "Sujeción potente, mazo resistente, construcción premium. Diseñado para cerrar huecos en pisos sin esfuerzo."
-        image: assets/img/compare/gap-tap.jpg
-        alt: "Herramienta Gap Tap"
-    end: "¡Elige la Mejor Manera!"
+      - title: "Nuestro Humilde Comienzo"
+        year: "2009-2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/1.jpg
+        alt:
+      - title: "Una Agencia nace"
+        year: "March 2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+        image: assets/img/timeline/2.jpg
+        alt:
+      - title: "La plantilla Jekyll es creada"
+        year: "2019"
+        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
+        image: assets/img/timeline/3.jpg
+        alt: image alt text
+      - title: "Título"
+        year: "2009-2011"
+        desc: "Su descripción aquí, **Markdown** es soportado completamente."
+        image: assets/img/timeline/4.jpg
+        alt:
+        # you can enforce the alignment
+        align: right
+    end: "¡Se parte <br> de Nuestra <br> Historia!"
 
-  how-to-use:
-    title: "Cómo Usar"
-    text: "Cierra huecos en unos simples pasos."
-    section: how-to-use
-    body: "1. Limpia el área del hueco.<br>2. Asegura la ventosa sobre la tabla del piso.<br>3. Golpea suavemente con el mazo hasta que el hueco se cierre.<br><br>**Consejo:** Consulta la hoja de instrucciones incluida para más detalles."
+  about:
+    title: "Sobre nosotros"
+    text: "nuestra historia"
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    section: nosotros
 
-  buy:
-    title: "Comprar Gap Tap"
-    text: "¿Listo para pisos perfectos? Elige tu tienda favorita:"
-    section: buy
-    storelinks:
-      - name: "Amazon"
-        url: "https://www.amazon.com/dp/B0DJHFJ8PC"
-        icon: fab fa-amazon
-      - name: "Walmart"
-        url: "https://www.walmart.com/ip/Gap-Tap-Heavy-Duty-Floor-Fixing-Tool/15297350480"
-        icon: fas fa-store
-      - name: "eBay"
-        url: "https://www.ebay.com/itm/297015894001"
-        icon: fab fa-ebay
-    note: "¿Preguntas o pedidos al por mayor? Escribe a <strong>support@gap-tap.com</strong>."
+  clients:
+    section: clientes
+    max-height: 100px
+    horizontal-scrolling: "" #"yes/no"
+    list:
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/envato.jpg
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/designmodo.jpg
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/themeforest.jpg
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients/creative-market.jpg
+
+  team:
+    title: "NUESTRO INCREÍBLE EQUIPO"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: equipo
+    people:
+      - name: "Kay Garland"
+        role: "Lead Designer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Larry Parker"
+        role: "Lead Marketer"
+        image: assets/img/team/2.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+      - name: "Diana Perterson"
+        role: "Lead Developer"
+        image: assets/img/team/500x500.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://facebook.com
+            icon: fab fa-facebook-f
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+
+  contact:
+    title: "Contáctenos"
+    text: "Lorem ipsum or call 123456789"
+    section: contacto
+    name: "Nombre*"
+    name-validation: "Por favor ingrese su nombre."
+    email: "Correo Electrónico*"
+    email-validation: "Por favor ingrese su correo electrónico."
+    phone: "Número Telefónico*"
+    phone-validation: "Por favor ingrese su número telefónico."
+    message: "Mensaje*"
+    message-validation: "Por favor escriba un mensaje."
+    subject: "Envío del formulario de contacto"
+    submit: "Enviar Mensaje"
 
   footer:
     legal: "Política de Privacidad"
@@ -205,7 +316,6 @@ es: &DEFAULT_ES
         icon: "fab fa-github"
       - url: https://instagram.com
         icon: "fab fa-instagram"
-
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
