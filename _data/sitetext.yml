@@ -11,15 +11,15 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
+    title: Flawless, Smooth, Floors....
+    text: Just a Tap Away
     button: Tell Me More
-    buttonlink: "#services"
+    buttonlink: "#features"
 
   services:
-    title: "Services"
+    title: "Features"
     text: "Lorem ipsum"
-    section: services
+    section: features
     list:
       - title: "E-Commerce"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
