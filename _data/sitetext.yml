@@ -18,18 +18,18 @@ en: &DEFAULT_EN
 
   services:
     title: "Features"
-    text: "Lorem ipsum"
+    text: "Gap Tap is the fast, reliable way to fix gaps in laminate, vinyl, or wood floors. No expensive contractors needed!"
     section: features
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
+      - title: "Heavy-Duty Suction Cup"
+        desc: "Secures firmly to floor planks for quick, damage-free gap closing."
+        icon: fas fa-anchor
+      - title: "Non-Scratch Mallet"
+        desc: "Tough yet gentle mallet ensures you won't mar your floors while fixing gaps."
+        icon: fas fa-hammer
+      - title: "Durable & Easy to Use"
+        desc: "Built with premium materials for both DIYers and pros seeking reliable results."
+        icon: fas fa-tools
 
   portfolio:
     title: "Portfolio"
