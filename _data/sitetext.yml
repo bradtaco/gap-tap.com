@@ -16,20 +16,20 @@ en: &DEFAULT_EN
     button: Tell Me More
     buttonlink: "#features"
 
-  overview:
-    title: "Overview"
-    text: "Gap Tap is a specialized toolkit designed to close gaps in laminate, vinyl, or hardwood floors quickly and safely. With a sturdy suction cup and a non-scratch mallet, you can solve floor gap problems in minutes."
-    section: overview
+  services:
+    title: "Features"
+    text: "Gap Tap is the fast, reliable way to fix gaps in laminate, vinyl, or wood floors. No expensive contractors needed!"
+    section: features
     list:
-      - title: "Why Gap Tap?"
-        desc: "We saw homeowners struggle with messy or expensive solutions for floor gaps. Gap Tap was born to offer a simple, cost-effective alternative."
-        icon: fas fa-lightbulb
-      - title: "Built for DIYers & Pros"
-        desc: "Whether you’re a first-time fixer or a seasoned contractor, Gap Tap’s premium materials ensure reliable, damage-free repairs."
-        icon: fas fa-user-cog
-      - title: "Save Time & Money"
-        desc: "No need to hire costly labor or invest in multiple tools. One kit does it all."
-        icon: fas fa-piggy-bank
+      - title: "Heavy-Duty Suction Cup"
+        desc: "Secures firmly to floor planks for quick, damage-free gap closing."
+        icon: fas fa-anchor
+      - title: "Non-Scratch Mallet"
+        desc: "Tough yet gentle mallet ensures you won't mar your floors while fixing gaps."
+        icon: fas fa-hammer
+      - title: "Durable & Easy to Use"
+        desc: "Built with premium materials for both DIYers and pros seeking reliable results."
+        icon: fas fa-tools
 
   portfolio:
     title: "Portfolio"
