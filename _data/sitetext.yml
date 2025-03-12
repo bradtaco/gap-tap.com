@@ -1,99 +1,105 @@
-# _data/ui-text.yml for Agency Jekyll Theme
 #
-# Updated for “Gap Tap” site. Replaces placeholder text with references to 
-# floor gap repair features, brand info, etc. 
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
 #
-# Usage:
-#   In your _config.yml, set `locale: "en"` or `en-US` so the theme loads from this file.
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
 #
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
 
+# English (default)
+# -----------------
 en: &DEFAULT_EN
   header:
-    title: "Flawless, Smooth Floors…"
-    text: "Just a Tap Away"
-    button: "Tell Me More"
+    title: Flawless, Smooth, Floors....
+    text: Just a Tap Away
+    button: Tell Me More
     buttonlink: "#features"
 
-  features:
-    title: "Features"
-    text: "Gap Tap is the fast, reliable way to fix gaps in laminate, vinyl, or wood floors. No expensive contractors needed!"
-    section: features
+  overview:
+    title: "Overview"
+    text: "Gap Tap is a specialized toolkit designed to close gaps in laminate, vinyl, or hardwood floors quickly and safely. With a sturdy suction cup and a non-scratch mallet, you can solve floor gap problems in minutes."
+    section: overview
     list:
-      - title: "Heavy-Duty Suction Cup"
-        desc: "Secures firmly to floor planks for quick, damage-free gap closing."
-        icon: fas fa-anchor
-      - title: "Non-Scratch Mallet"
-        desc: "Tough yet gentle mallet ensures you won't mar your floors while fixing gaps."
-        icon: fas fa-hammer
-      - title: "Durable & Easy to Use"
-        desc: "Built with premium materials for both DIYers and pros seeking reliable results."
-        icon: fas fa-tools
+      - title: "Why Gap Tap?"
+        desc: "We saw homeowners struggle with messy or expensive solutions for floor gaps. Gap Tap was born to offer a simple, cost-effective alternative."
+        icon: fas fa-lightbulb
+      - title: "Built for DIYers & Pros"
+        desc: "Whether you’re a first-time fixer or a seasoned contractor, Gap Tap’s premium materials ensure reliable, damage-free repairs."
+        icon: fas fa-user-cog
+      - title: "Save Time & Money"
+        desc: "No need to hire costly labor or invest in multiple tools. One kit does it all."
+        icon: fas fa-piggy-bank
 
   portfolio:
     title: "Portfolio"
-    text: "Check out Gap Tap in action—before & after photos, tool close-ups, and more."
+    text: "Lorem ipsum dolor sit amet consectetur."
     section: portfolio
     closebutton: "Close Project"
 
   timeline:
     title: "Timeline"
-    text: "From an idea to flawless floors everywhere"
+    text: "Lorem ipsum timeline"
     section: timeline
+    # left is the default
+    #start_align: "left"
     events:
-      - title: "Identifying the Problem"
-        year: "2023"
-        desc: "We saw how many people struggled with floor gaps and wanted a simpler solution."
+      - title: "Our Humble Beginnings"
+        year: "2009-2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
         image: assets/img/timeline/1.jpg
-        alt: "Floor gap frustration"
-      - title: "Prototyping & Testing"
-        year: "2024"
-        desc: "Countless mallet and suction cup iterations led us to the perfect blend of strength and safety."
+        alt:
+      - title: "An Agency is Born"
+        year: "March 2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
         image: assets/img/timeline/2.jpg
-        alt: "Tool design process"
-      - title: "Gap Tap Launches"
-        year: "2025"
-        desc: "We introduced our kit for easy, affordable gap repair—saving people from unnecessary costs."
+        alt:
+      - title: "Jekyll Theme is created"
+        year: "2019"
+        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
         image: assets/img/timeline/3.jpg
-        alt: "Official product launch"
-      - title: "Continued Innovation"
-        year: "Present"
-        desc: "We're refining and expanding our line to help everyone achieve smooth floors."
+        alt: image alt text
+      - title: "Title"
+        year: "2009-2011"
+        desc: "Your description here, **Markdown** is fully supported."
         image: assets/img/timeline/4.jpg
-        alt: "Ongoing improvements"
+        alt:
+        # you can enforce the alignment
+        align: right
     end: "Be Part <br> of Our <br> Story!"
 
   about:
     title: "About Us"
-    text: "Our Story"
-    body: "Gap Tap is brought to you by Circle Solutions LLC, a team dedicated to practical home repair tools. We believe fixing floor gaps should be straightforward, cost-effective, and safe. **Markdown** supported for styling!"
+    text: "our story"
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
     section: about
 
   clients:
     section: clients
     max-height: 100px
-    horizontal-scrolling: "" # "yes/no"
+    horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "Home Repair Enthusiasts"
-        url: "#"
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/envato.jpg
-      - title: "Professional Contractors"
-        url: "#"
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/designmodo.jpg
-      - title: "DIY Community"
-        url: "#"
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/themeforest.jpg
-      - title: "Hardware Stores"
-        url: "#"
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/creative-market.jpg
 
   team:
     title: "OUR AMAZING TEAM"
-    text: "Passionate about perfect floors."
-    subtext: "We combine design, engineering, and real-world testing to ensure you get the best floor gap repair tool possible."
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: team
     people:
-      - name: "Brad Dougherty"
-        role: "Founder & Design Lead"
+      - name: "Kay Garland"
+        role: "Lead Designer"
         image: assets/img/team/500x500.jpg
         social:
           - url: https://twitter.com
@@ -102,8 +108,8 @@ en: &DEFAULT_EN
             icon: fab fa-facebook-f
           - url: https://linkedin.com
             icon: fab fa-linkedin-in
-      - name: "Soo Smith"
-        role: "Operations Manager"
+      - name: "Larry Parker"
+        role: "Lead Marketer"
         image: assets/img/team/2.jpg
         social:
           - url: https://twitter.com
@@ -112,8 +118,8 @@ en: &DEFAULT_EN
             icon: fab fa-facebook-f
           - url: https://linkedin.com
             icon: fab fa-linkedin-in
-      - name: "Nick Lu"
-        role: "Manufacturing Partner"
+      - name: "Diana Perterson"
+        role: "Lead Developer"
         image: assets/img/team/500x500.jpg
         social:
           - url: https://twitter.com
@@ -125,7 +131,7 @@ en: &DEFAULT_EN
 
   contact:
     title: "Contact Us"
-    text: "Questions about Gap Tap? Call 1-800-FIX-GAPS or reach out below!"
+    text: "Lorem ipsum or call 123456789"
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."
@@ -151,7 +157,6 @@ en: &DEFAULT_EN
         icon: "fab fa-github"
       - url: https://instagram.com
         icon: "fab fa-instagram"
-
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -165,91 +170,95 @@ en-AU:
 # -------
 es: &DEFAULT_ES
   header:
-    title: "Pisos Suaves y Perfectos…"
-    text: "A Solo un Golpe"
-    button: "Más Información"
-    buttonlink: "#features"
+    title: ¡Bienvenido a nuestro Estudio!
+    text: Es un placer conocerle
+    button: Ver más
+    buttonlink: "#servicios"
 
-  features:
-    title: "Características"
-    text: "Gap Tap soluciona huecos en pisos de manera rápida y confiable, sin costosos contratistas."
-    section: features
+  services:
+    title: "Servicios"
+    text: "Lorem ipsum"
+    section: servicios
     list:
-      - title: "Ventosa Resistente"
-        desc: "Agarra firmemente las tablas para cerrar huecos sin dañar el piso."
-        icon: fas fa-anchor
-      - title: "Mazo Antirrayas"
-        desc: "Golpes suaves pero firmes que no maltratan la superficie."
-        icon: fas fa-hammer
-      - title: "Duradero y Fácil de Usar"
-        desc: "Fabricado con materiales de alta calidad para aficionados y profesionales."
-        icon: fas fa-tools
+      - title: "Comercio Electrónico"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Diseño Responsivo"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon: fas fa-laptop
+      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+        desc: "Su descripción aquí, soporte completo de **Markdown**"
+        icon: fab fa-markdown
 
   portfolio:
     title: "Portafolio"
-    text: "Mira Gap Tap en acción: antes y después, primeros planos y más."
-    section: portfolio
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: portafolio
     closebutton: "Cerrar Proyecto"
 
   timeline:
     title: "Cronología"
-    text: "Desde la idea hasta los pisos perfectos"
-    section: timeline
+    text: "Lorem ipsum timeline"
+    section: cronologia
+    # left is the default
+    #start_align: "left"
     events:
-      - title: "Identificar el Problema"
-        year: "2023"
-        desc: "Vimos a muchas personas lidiando con huecos en sus pisos y buscamos una solución sencilla."
+      - title: "Nuestro Humilde Comienzo"
+        year: "2009-2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
         image: assets/img/timeline/1.jpg
-        alt: "Frustración con huecos"
-      - title: "Prototipos y Pruebas"
-        year: "2024"
-        desc: "Después de varios prototipos de ventosas y mazos, logramos la combinación perfecta de fuerza y seguridad."
+        alt:
+      - title: "Una Agencia nace"
+        year: "March 2011"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
         image: assets/img/timeline/2.jpg
-        alt: "Proceso de diseño"
-      - title: "Lanzamiento de Gap Tap"
-        year: "2025"
-        desc: "Ofrecemos una herramienta para reparar huecos de manera fácil y económica."
+        alt:
+      - title: "La plantilla Jekyll es creada"
+        year: "2019"
+        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
         image: assets/img/timeline/3.jpg
-        alt: "Lanzamiento oficial"
-      - title: "Innovación Continua"
-        year: "Presente"
-        desc: "Seguimos mejorando y ampliando la línea para pisos cada vez más suaves."
+        alt: image alt text
+      - title: "Título"
+        year: "2009-2011"
+        desc: "Su descripción aquí, **Markdown** es soportado completamente."
         image: assets/img/timeline/4.jpg
-        alt: "Mejoras constantes"
-    end: "¡Sé Parte <br> de Nuestra <br> Historia!"
+        alt:
+        # you can enforce the alignment
+        align: right
+    end: "¡Se parte <br> de Nuestra <br> Historia!"
 
   about:
-    title: "Sobre Nosotros"
-    text: "Nuestra Historia"
-    body: "Gap Tap es creado por Circle Solutions LLC, dedicados a herramientas de reparación de hogar. Creemos que arreglar huecos en pisos debe ser simple, accesible y seguro. **Markdown** soportado."
-    section: about
+    title: "Sobre nosotros"
+    text: "nuestra historia"
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    section: nosotros
 
   clients:
-    section: clients
+    section: clientes
     max-height: 100px
-    horizontal-scrolling: "" # "yes/no"
+    horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "Aficionados al Bricolaje"
-        url: "#"
+      - title: "envato"
+        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/envato.jpg
-      - title: "Contratistas Profesionales"
-        url: "#"
+      - title: "designmodo"
+        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/designmodo.jpg
-      - title: "Comunidad DIY"
-        url: "#"
+      - title: "themeforest"
+        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/themeforest.jpg
-      - title: "Tiendas de Herramientas"
-        url: "#"
+      - title: "Creative Market"
+        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/creative-market.jpg
 
   team:
-    title: "NUESTRO EQUIPO"
-    text: "Apasionados por pisos perfectos."
-    subtext: "Combinamos diseño, ingeniería y pruebas reales para garantizar la mejor herramienta de reparación de huecos."
-    section: team
+    title: "NUESTRO INCREÍBLE EQUIPO"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: equipo
     people:
-      - name: "Brad Dougherty"
-        role: "Fundador y Líder de Diseño"
+      - name: "Kay Garland"
+        role: "Lead Designer"
         image: assets/img/team/500x500.jpg
         social:
           - url: https://twitter.com
@@ -258,8 +267,8 @@ es: &DEFAULT_ES
             icon: fab fa-facebook-f
           - url: https://linkedin.com
             icon: fab fa-linkedin-in
-      - name: "Soo Smith"
-        role: "Gerente de Operaciones"
+      - name: "Larry Parker"
+        role: "Lead Marketer"
         image: assets/img/team/2.jpg
         social:
           - url: https://twitter.com
@@ -268,8 +277,8 @@ es: &DEFAULT_ES
             icon: fab fa-facebook-f
           - url: https://linkedin.com
             icon: fab fa-linkedin-in
-      - name: "Nick Lu"
-        role: "Socio de Fabricación"
+      - name: "Diana Perterson"
+        role: "Lead Developer"
         image: assets/img/team/500x500.jpg
         social:
           - url: https://twitter.com
@@ -281,17 +290,17 @@ es: &DEFAULT_ES
 
   contact:
     title: "Contáctenos"
-    text: "¿Dudas sobre Gap Tap? Llámanos al 1-800-FIX-GAPS o completa el siguiente formulario."
-    section: contact
+    text: "Lorem ipsum or call 123456789"
+    section: contacto
     name: "Nombre*"
     name-validation: "Por favor ingrese su nombre."
     email: "Correo Electrónico*"
     email-validation: "Por favor ingrese su correo electrónico."
-    phone: "Número Telefónico"
+    phone: "Número Telefónico*"
     phone-validation: "Por favor ingrese su número telefónico."
     message: "Mensaje*"
     message-validation: "Por favor escriba un mensaje."
-    subject: "Envío de Formulario de Contacto"
+    subject: "Envío del formulario de contacto"
     submit: "Enviar Mensaje"
 
   footer:
@@ -307,7 +316,6 @@ es: &DEFAULT_ES
         icon: "fab fa-github"
       - url: https://instagram.com
         icon: "fab fa-instagram"
-
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
