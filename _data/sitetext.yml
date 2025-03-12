@@ -41,7 +41,7 @@ en: &DEFAULT_EN
 
   # TIMELINE => "Journey & Comparisons"
   timeline:
-    title: "Our Journey & Comparisons"
+    title: "Our Journey"
     text: "How does Gap Tap stack up, and where did it begin?"
     section: "timeline"
     events:
