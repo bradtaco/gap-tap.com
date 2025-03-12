@@ -16,7 +16,7 @@ en: &DEFAULT_EN
     button: Tell Me More
     buttonlink: "#features"
 
-  features:
+  services:
     title: "Features"
     text: "Gap Tap is the fast, reliable way to fix gaps in laminate, vinyl, or wood floors. No expensive contractors needed!"
     section: features
