@@ -131,17 +131,17 @@ en: &DEFAULT_EN
 
   contact:
     title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    text: "Need help or have feedback? We’d love to hear from you."
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."
     email: "Email*"
-    email-validation: "Please enter your email address."
-    phone: "Phone Number"
+    email-validation: "Please enter your email."
+    phone: "Phone"
     phone-validation: "Please enter your phone number."
     message: "Message*"
     message-validation: "Please enter a message."
-    subject: "Contact Form Submission"
+    subject: "Contact Inquiry"
     submit: "Send Message"
 
   footer:
