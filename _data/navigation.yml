@@ -11,8 +11,8 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Overview"
-      section: overview
+    - title: "Features"
+      section: features
     - title: "Portfolio"
       section: portfolio
     - title: "About"
