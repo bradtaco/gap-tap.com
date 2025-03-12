@@ -1,21 +1,26 @@
 #
 # Reusing the Agency Jekyll Theme’s standard keys: 
-#   header, services, portfolio, timeline, about, team, clients, contact, footer
+#   header, services, timeline, about, team, contact, footer
 #
-# We'll place your "Compare" or "How to Use" sections within timeline or team, or as bullet points in portfolio.
+# We'll place "Compare" or "History" under timeline, "How to Use" under about, 
+# and use the team section to show store links (Buy Gap Tap).
+#
+# Usage:
+#   In your _config.yml, set locale: "en" or "es" to load text from here.
+#
 
 en: &DEFAULT_EN
   header:
     title: "Flawless, Smooth Floors…"
     text: "Just A Tap Away"
     button: "Learn More"
-    buttonlink: "#features"  # We'll use #services for the first major section
+    buttonlink: "#features"
 
-  # 1) SERVICES SECTION: Use it as an "Overview/Features" section
+  # SERVICES => "Features"/Overview
   services:
     title: "Features"
     text: "Gap Tap is the fast, reliable way to fix gaps in laminate, vinyl, or wood floors. No expensive contractors needed!"
-    section: features
+    section: "features"
     list:
       - title: "Heavy-Duty Suction Cup"
         desc: "Secures firmly to floor planks for quick, damage-free gap closing."
@@ -27,33 +32,32 @@ en: &DEFAULT_EN
         desc: "Built with premium materials for both DIYers and pros seeking reliable results."
         icon: fas fa-tools
 
-
-  # 4) ABOUT SECTION: Use for brand story or "How to Use"
+  # ABOUT => "How to Use"
   about:
     title: "How to Use"
     text: "Quick Steps"
-    body: "1. Clean & Inspect: Remove dust/debris. <br> 2. Position: Press Gap Tap's suction cup near the gap. <br> 3. Tap Gently: Use our non-scratch mallet until the gap is fully closed.<br><br>**Pro Tip:** Slightly moisten the suction ring if needed for stronger grip."
-    section: about
-    
-  # 3) TIMELINE SECTION: Use to handle "Compare" or brand history
+    body: "1. Clean & Inspect: Remove dust/debris.<br>2. Position: Press Gap Tap’s suction cup near the gap.<br>3. Tap Gently: Use our non-scratch mallet until the gap is fully closed.<br><br>**Pro Tip:** Slightly moisten the suction ring if needed for stronger grip."
+    section: "about"
+
+  # TIMELINE => "Journey & Comparisons"
   timeline:
     title: "Our Journey & Comparisons"
-    text: "How does Gap Tap stack up and where it came from"
-    section: timeline
+    text: "How does Gap Tap stack up, and where did it begin?"
+    section: "timeline"
     events:
       - title: "Identifying the Problem"
         year: "2023"
-        desc: "We saw how many people struggled with floor gaps and wanted an easier, cost-effective fix."
+        desc: "We saw many people struggling with floor gaps and wanted a simpler, cost-effective fix."
         image: assets/img/timeline/1.jpg
         alt: "Problem recognition"
       - title: "Prototyping & Testing"
         year: "2024"
-        desc: "Refined the suction cup, tested mallet designs until we found the perfect synergy."
+        desc: "Refined the suction cup; tested mallet designs until we found the perfect synergy."
         image: assets/img/timeline/2.jpg
         alt: "Tool design process"
       - title: "Comparing Alternatives"
         year: ""
-        desc: "**Block & Hammer** – Risky and can damage floors. **Generic Suction Tools** – Weak grip, not built for repeated taps. **Gap Tap** – Strong suction, non-scratch mallet, premium build."
+        desc: "**Block & Hammer** – Risky, can damage floors. **Generic Suction Tools** – Weak grip, not built for repeated taps. **Gap Tap** – Strong suction, non-scratch mallet, premium build."
         image: assets/img/timeline/3.jpg
         alt: "Comparison summary"
       - title: "Launch & Growth"
@@ -63,14 +67,12 @@ en: &DEFAULT_EN
         alt: "Ongoing expansions"
     end: "Take the Stress Out of Floor Repairs!"
 
-
-  # 5) TEAM SECTION: Use for buying info or real team members
+  # TEAM => "Buy Gap Tap"
   team:
     title: "Buy Gap Tap"
     text: "Available at your favorite online retailers"
     subtext: ""
-    section: buy
-    # Instead of 'people', we can still mention store links or keep some placeholders
+    section: "buy"
     people:
       - name: "Amazon"
         role: "Click to Buy"
@@ -91,17 +93,16 @@ en: &DEFAULT_EN
           - url: "https://www.ebay.com/itm/297015894001"
             icon: fab fa-ebay
 
-
-  # 7) CONTACT SECTION
+  # CONTACT
   contact:
     title: "Contact Us"
     text: "Need help or have questions? Get in touch!"
-    section: contact
+    section: "contact"
     name: "Name*"
     name-validation: "Please enter your name."
     email: "Email*"
     email-validation: "Please enter your email address."
-    phone: "Phone Number"
+    phone: "Phone Number*"
     phone-validation: "Please enter your phone number."
     message: "Message*"
     message-validation: "Please enter a message."
@@ -130,3 +131,126 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
+
+##############################################
+# SPANISH
+##############################################
+
+es: &DEFAULT_ES
+  header:
+    title: "Pisos Suaves y Perfectos…"
+    text: "A Solo un Toque"
+    button: "Más Información"
+    buttonlink: "#features"
+
+  # SERVICES => "Características"
+  services:
+    title: "Características"
+    text: "Gap Tap es la forma rápida y confiable de cerrar huecos en pisos laminados, vinílicos o de madera. ¡Sin contratistas costosos!"
+    section: "features"
+    list:
+      - title: "Ventosa Resistente"
+        desc: "Se adhiere firmemente a las tablas para un cierre rápido y sin daños."
+        icon: fas fa-anchor
+      - title: "Mazo Antirrayas"
+        desc: "Fuerte pero delicado, protege tus pisos mientras cierras huecos."
+        icon: fas fa-hammer
+      - title: "Duradero y Fácil de Usar"
+        desc: "Materiales de primera para aficionados y profesionales que buscan resultados confiables."
+        icon: fas fa-tools
+
+  # ABOUT => "Cómo Usar"
+  about:
+    title: "Cómo Usar"
+    text: "Pasos Sencillos"
+    body: "1. Limpia y Revisa: Retira el polvo o los escombros.<br>2. Posiciona: Coloca la ventosa de Gap Tap cerca del hueco.<br>3. Golpea con Cuidado: Usa el mazo antirrayas hasta cerrar el hueco.<br><br>**Consejo:** Humedece ligeramente la ventosa si necesitas mayor agarre."
+    section: "about"
+
+  # TIMELINE => "Comparaciones / Historia"
+  timeline:
+    title: "Nuestro Camino y Comparaciones"
+    text: "Cómo surgió Gap Tap y en qué se diferencia"
+    section: "timeline"
+    events:
+      - title: "Identificar el Problema"
+        year: "2023"
+        desc: "Vimos a mucha gente batallando con huecos en el piso, buscando una solución sencilla y económica."
+        image: assets/img/timeline/1.jpg
+        alt: "Reconociendo el problema"
+      - title: "Prototipos y Pruebas"
+        year: "2024"
+        desc: "Perfeccionamos la ventosa y probamos varios diseños de mazo hasta lograr la sinergia perfecta."
+        image: assets/img/timeline/2.jpg
+        alt: "Proceso de diseño de herramientas"
+      - title: "Comparando Alternativas"
+        year: ""
+        desc: "**Bloque y Martillo** – Riesgoso, puede dañar el piso. **Herramientas de Succión Genéricas** – Poco agarre, no diseñadas para golpes repetidos. **Gap Tap** – Succión potente, mazo antirrayas y construcción premium."
+        image: assets/img/timeline/3.jpg
+        alt: "Resumen de comparación"
+      - title: "Lanzamiento y Crecimiento"
+        year: "2025"
+        desc: "Gap Tap llegó oficialmente al mercado. Ahora nos enfocamos en expansiones y nuevos accesorios."
+        image: assets/img/timeline/4.jpg
+        alt: "Expansiones en curso"
+    end: "¡Olvídate del Estrés al Reparar Pisos!"
+
+  # TEAM => "Compra Gap Tap"
+  team:
+    title: "Compra Gap Tap"
+    text: "Disponible en tus tiendas en línea favoritas"
+    subtext: ""
+    section: "buy"
+    people:
+      - name: "Amazon"
+        role: "Haz Clic para Comprar"
+        image: assets/img/team/amazon.jpg
+        social:
+          - url: "https://www.amazon.com/dp/B0DJHFJ8PC"
+            icon: fab fa-amazon
+      - name: "Walmart"
+        role: "Haz Clic para Comprar"
+        image: assets/img/team/walmart.jpg
+        social:
+          - url: "https://www.walmart.com/ip/Gap-Tap-Heavy-Duty-Floor-Fixing-Tool/15297350480"
+            icon: fas fa-store
+      - name: "eBay"
+        role: "Haz Clic para Comprar"
+        image: assets/img/team/ebay.jpg
+        social:
+          - url: "https://www.ebay.com/itm/297015894001"
+            icon: fab fa-ebay
+
+  # CONTACT => "Contáctenos"
+  contact:
+    title: "Contáctenos"
+    text: "¿Necesitas ayuda o tienes preguntas? ¡Estamos aquí para apoyarte!"
+    section: "contact"
+    name: "Nombre*"
+    name-validation: "Por favor ingresa tu nombre."
+    email: "Correo Electrónico*"
+    email-validation: "Por favor ingresa tu correo electrónico."
+    phone: "Teléfono*"
+    phone-validation: "Por favor ingresa tu número de teléfono."
+    message: "Mensaje*"
+    message-validation: "Por favor ingresa un mensaje."
+    subject: "Envío del Formulario de Contacto"
+    submit: "Enviar Mensaje"
+
+  footer:
+    legal: "Política de Privacidad"
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/raviriley/agency-jekyll-theme
+        icon: "fab fa-github"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+
+es-ES:
+  <<: *DEFAULT_ES
+es-CO:
+  <<: *DEFAULT_ES
