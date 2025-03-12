@@ -9,13 +9,13 @@ en: &DEFAULT_EN
     title: "Flawless, Smooth Floors…"
     text: "Just A Tap Away"
     button: "Learn More"
-    buttonlink: "#services"  # We'll use #services for the first major section
+    buttonlink: "#features"  # We'll use #services for the first major section
 
   # 1) SERVICES SECTION: Use it as an "Overview/Features" section
   services:
     title: "Features"
     text: "Gap Tap is the fast, reliable way to fix gaps in laminate, vinyl, or wood floors. No expensive contractors needed!"
-    section: services
+    section: features
     list:
       - title: "Heavy-Duty Suction Cup"
         desc: "Secures firmly to floor planks for quick, damage-free gap closing."
@@ -27,20 +27,14 @@ en: &DEFAULT_EN
         desc: "Built with premium materials for both DIYers and pros seeking reliable results."
         icon: fas fa-tools
 
-  # 2) PORTFOLIO SECTION: Use as "Specs" or Additional Details
-  portfolio:
-    title: "Specifications"
-    text: "Take a closer look at what makes Gap Tap so effective."
-    section: portfolio
-    closebutton: "Close"   # Stays as is for popup
-    # You can show "items" if you want a grid like the standard portfolio. Example:
-    bulletpoints:
-      - "Weight: ~3.2 lbs (1.45 kg)"
-      - "Suction Cup Diameter: 4.5 inches"
-      - "Mallet: Non-scratch rubber head"
-      - "Materials: PA, steel, shock-absorbing rubber"
-      - "Recommended Surfaces: Laminate, vinyl, wood"
 
+  # 4) ABOUT SECTION: Use for brand story or "How to Use"
+  about:
+    title: "How to Use"
+    text: "Quick Steps"
+    body: "1. Clean & Inspect: Remove dust/debris. <br> 2. Position: Press Gap Tap's suction cup near the gap. <br> 3. Tap Gently: Use our non-scratch mallet until the gap is fully closed.<br><br>**Pro Tip:** Slightly moisten the suction ring if needed for stronger grip."
+    section: about
+    
   # 3) TIMELINE SECTION: Use to handle "Compare" or brand history
   timeline:
     title: "Our Journey & Comparisons"
@@ -69,19 +63,13 @@ en: &DEFAULT_EN
         alt: "Ongoing expansions"
     end: "Take the Stress Out of Floor Repairs!"
 
-  # 4) ABOUT SECTION: Use for brand story or "How to Use"
-  about:
-    title: "How to Use"
-    text: "Quick Steps"
-    body: "1. Clean & Inspect: Remove dust/debris. <br> 2. Position: Press Gap Tap's suction cup near the gap. <br> 3. Tap Gently: Use our non-scratch mallet until the gap is fully closed.<br><br>**Pro Tip:** Slightly moisten the suction ring if needed for stronger grip."
-    section: about
 
   # 5) TEAM SECTION: Use for buying info or real team members
   team:
     title: "Buy Gap Tap"
-    text: "Where to Purchase"
-    subtext: "Ready to fix your floors? Order Gap Tap at:"
-    section: team
+    text: "Available at your favorite online retailers"
+    subtext: ""
+    section: buy
     # Instead of 'people', we can still mention store links or keep some placeholders
     people:
       - name: "Amazon"
@@ -103,24 +91,6 @@ en: &DEFAULT_EN
           - url: "https://www.ebay.com/itm/297015894001"
             icon: fab fa-ebay
 
-  # 6) CLIENTS SECTION: Possibly show endorsements or bulk ordering info
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" # "yes" or "no"
-    list:
-      - title: "Contractors Approved"
-        url: "#"  # or real link
-        logo: assets/img/clients/contractor.jpg
-      - title: "DIY Enthusiasts"
-        url: "#"
-        logo: assets/img/clients/diy.jpg
-      - title: "Local Hardware Stores"
-        url: "#"
-        logo: assets/img/clients/hardware.jpg
-      - title: "Bulk Orders Available"
-        url: "mailto:support@gap-tap.com"
-        logo: assets/img/clients/bulk.jpg
 
   # 7) CONTACT SECTION
   contact:
