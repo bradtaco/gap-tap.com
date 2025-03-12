@@ -15,7 +15,7 @@ en: &DEFAULT_EN
       section: features
     - title: "How to Use"
       section: about
-    - title: "Our Story"
+    - title: "Our Journey"
       section: timeline
     - title: "Buy Now"
       section: buy
