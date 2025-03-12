@@ -70,8 +70,8 @@ en: &DEFAULT_EN
 
   about:
     title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    text: "Our Story"
+    body: "Gap Tap is created by Circle Solutions LLC, a small team passionate about practical home-improvement solutions. We believe in empowering everyday people with tools that save time, money, and headaches. From initial prototypes to final product, our mission is simple: **help you achieve flawless floors without the fuss.**"
     section: about
 
   clients:
