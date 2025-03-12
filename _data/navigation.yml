@@ -13,9 +13,9 @@ en: &DEFAULT_EN
   nav:
     - title: "Features"
       section: features
-    - title: "About"
+    - title: "How to Use"
       section: about
-    - title: "Timeline"
+    - title: "Our Story"
       section: timeline
     - title: "Buy Now"
       section: buy
