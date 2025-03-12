@@ -76,19 +76,19 @@ en: &DEFAULT_EN
     people:
       - name: "Amazon"
         role: "Click to Buy"
-        image: assets/img/team/amazon.jpg
+        image: assets/img/team/amazon.png
         social:
           - url: "https://www.amazon.com/dp/B0DJHFJ8PC"
             icon: fab fa-amazon
       - name: "Walmart"
         role: "Click to Buy"
-        image: assets/img/team/walmart.jpg
+        image: assets/img/team/walmart.png
         social:
           - url: "https://www.walmart.com/ip/Gap-Tap-Heavy-Duty-Floor-Fixing-Tool/15297350480"
             icon: fas fa-store
       - name: "eBay"
         role: "Click to Buy"
-        image: assets/img/team/ebay.jpg
+        image: assets/img/team/ebay.png
         social:
           - url: "https://www.ebay.com/itm/297015894001"
             icon: fab fa-ebay
